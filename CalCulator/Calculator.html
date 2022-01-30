@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator_project</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: darkslategray;
+            }
+
+            .btn {
+                background-color: grey;
+                text-align: center;
+                width: 25%;
+                height: 80px;
+                font-size: larger;
+                font-weight: bolder;
+                border: 1px solid;
+                margin: 0 -2px;
+            }
+
+
+            .s1 {
+                background-color: orange;
+            }
+
+            .btn3 {
+                background-color: rgba(240, 40, 40, 0.651);
+                text-align: center;
+                width: 25%;
+                height: 80px;
+                font-size: larger;
+                font-weight: bolder;
+                border: 1px solid;
+                margin: 0 -2px;
+
+            }
+
+            .btn4 {
+                background-color: rgba(45, 219, 68, 0.651);
+                text-align: center;
+                width: 25%;
+                height: 80px;
+                font-size: larger;
+                font-weight: bolder;
+                border: 1px solid;
+                margin: 0 -2px;
+            }
+
+            button:hover {
+                background-color: ghostwhite;
+            }
+
+
+            input {
+                width: 100%;
+                padding: 10px 10px;
+                height: 100px;
+                font-size: xxx-large;
+                background-color: rgb(173, 197, 221);
+                color: black;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <form>
+                <input type="text" name="text" id="input" value="">
+            </form>
+            <div class="mainContainer">
+                <button type="button" value="+" class="btn s1" onclick="btns('+')">+</button>
+                <button type="button" value="-" class="btn s1" onclick="btns('-')">-</button>
+                <button type="button" value="*" class="btn s1" onclick="btns('*')">*</button>
+                <button type="button" value="/" class="btn s1" onclick="btns('/')">/</button>
+                <button type="button" value="%" class="btn s1" onclick="btns('%')">%</button>
+                <button type="button" value="9" class="btn s2" onclick="btns(9)">9</button>
+                <button type="button" value="8" class="btn s2" onclick="btns(8)">8</button>
+                <button type="button" value="7" class="btn s2" onclick="btns(7)">7</button>
+                <button type="button" value="." class="btn s2" onclick="btns('.')">.</button>
+                <button type="button" value="6" class="btn s2" onclick="btns(6)">6</button>
+                <button type="button" value="5" class="btn s2" onclick="btns(5)">5</button>
+                <button type="button" value="4" class="btn s2" onclick="btns(4)">4</button>
+                <button type="button" value="=" class="btn4" onclick="Equals()">=</button>
+                <button type="button" value="3" class="btn s2" onclick="btns('3')">3</button>
+                <button type="button" value="2" class="btn s2" onclick="btns(2)">2</button>
+                <button type="button" value="1" class="btn s2" onclick="btns(1)">1</button>
+                <button type="button" value="C" class="btn3" onclick="Clear()">C</button>
+
+            </div>
+        </div>
+        <script src="Calculator.js"></script>
+    </body>
+
+</html>
